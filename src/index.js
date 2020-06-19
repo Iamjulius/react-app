@@ -66,4 +66,14 @@ render(<App />, document.getElementById("root"));
 /*
 <Route exact path="/" render={(props) => <div>Home</div>}/> // "only a URL path of "/" will match
 <Route strict path="/about" render={(props) => <div>About</div>}/> // A URL path of "/about" matches but "/about/" doesn't match
+const App = () => (
+  <div>
+    <BrowserRouter> 
+      <div>
+        <Route path="/" render={(props) => <div>Home</div>}/> //A URL path of "/about/123" matches because "/about/123" contains "/" 
+        <Route path="/about" render={(props) => <div>About</div>}/> //A URL path of "/about/123" matches because "/about/123" contains "/about
+      </div>
+    </BrowserRouter>
+  </div>
+);
 */
