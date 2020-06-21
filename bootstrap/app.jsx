@@ -1,4 +1,4 @@
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { Navbar, NavbarBrand } from "reactstrap";
 
 class App extends Component {
   render() {
@@ -14,3 +14,7 @@ class App extends Component {
   }
 }
 
+//import Menu from './components/MenuComponent';
+
+//<Menu />
+//https://www.coursera.org/learn/front-end-react/supplement/996so/exercise-instructions-react-components-part-1
